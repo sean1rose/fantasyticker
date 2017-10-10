@@ -160,7 +160,7 @@ class App extends React.Component {
       <div>
         {this.latestItem()}
         <div className="recentitems">
-          {this.recentItems(10)}
+          {this.recentItems(25)}
         </div>
         <div className="ticker-wrap">
           <div className="ticker">
