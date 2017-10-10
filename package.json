@@ -1,0 +1,67 @@
+{
+  "name": "fantasyticker",
+  "productName": "fantasyticker",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": "seanrose",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "npm"
+      },
+      "electronWinstallerConfig": {
+        "name": "fantasyticker"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "fantasyticker"
+      }
+    }
+  },
+  "dependencies": {
+    "electron-compile": "^6.4.2",
+    "electron-devtools-installer": "^2.2.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "lodash": "^4.17.4",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "twit": "^2.2.9"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^4.1.2",
+    "electron-prebuilt-compile": "1.7.8"
+  }
+}
