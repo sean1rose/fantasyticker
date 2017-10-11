@@ -28,6 +28,13 @@ h3 {
 .recentlist {
   padding-left: 5px;
   font-family: helvetica;
+  overflow-y: scroll;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0px;
 }
 
 .recentlistitem {
